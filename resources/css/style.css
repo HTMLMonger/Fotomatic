@@ -92,6 +92,9 @@ header .mobile {
   display: none;
 }
 
+header .tablet{
+  display:none;
+}
 @media only screen and (max-width: 450px) {
   header .desktop {
     display: none;
@@ -114,36 +117,47 @@ header .mobile {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    vertical-align: middle;
+
   }
 
   header .mobile li {
     padding: 0;
+
+
   }
 
+  header .mobile li img{
+    vertical-align: middle;
+  }
   header .mobile .button {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
   }
+
+  .logo{
+    display:none;
+  }
 }
 @media only screen and (min-width: 450px) and (max-width: 890px) {
   header .desktop {
     display: none;
   }
-
   header .mobile {
     display: none;
   }
   header .tablet {
-    display:block;
+    display:flex;
   }
   header .tablet .button {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
     line-height: 1.6;
     color: white;
+  }
+  header .tablet li img{
+    vertical-align: middle;
   }
 }
 /* Sign Up Section */
@@ -165,20 +179,17 @@ header .mobile {
   background-color: #9dc20b;
   margin-top:10.625rem;
   margin-left: 6.25rem;
-  width:30%;
+  width:40%;
 
 }
 
 
 #sign-up-cta .content {
   margin: 2rem 5rem 3.5rem 5rem;
-
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
   line-height: 1.4;
   color: white;
-
-
 }
 
 #sign-up-cta h1 {
@@ -195,21 +206,26 @@ header .mobile {
 
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
+  padding-top: 2rem;
 }
 
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
+
 }
 
 #sign-up-cta .button {
-  margin: 1.25rem auto 3.5rem auto;
+  margin: 1.25rem auto;
   padding: 1.625rem;
-  width: 85%;
   justify-content: center;
   align-items: center;
 }
-
+#sign-up-cta .email{
+  width:70%;
+  align-items: center;
+  margin:auto;
+}
 
 @media only screen and (max-width: 810px) {
   #sign-up-section {
@@ -271,7 +287,7 @@ header .mobile {
   margin: 0px 1.1875rem;
   padding: 2rem;
   background-color: white;
-  max-width:90%;
+  max-width:100%;
 }
 
 
@@ -328,6 +344,9 @@ header .mobile {
   }
 
 
+  .grey{
+    background-color: #979797;
+  }
 }
 
 /* Filters Section */
@@ -475,9 +494,12 @@ header .mobile {
     text-align: center;
   }
 
+  #quotes-section .content{
+    padding: 1.75rem;
+  }
 
   #quotes-section .quote-citation { 
-    padding-top: 2rem; 
+    padding-top: 1rem; 
   }
 
 }
