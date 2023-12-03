@@ -354,9 +354,18 @@ header .tablet{
 
 @media only screen and (max-width: 890px){
 
-
-  .content h2, .content h3{
+  #features-section {
+   padding: 0;
+    margin: 0'
+  }
+  .center .content h2, .center .content h3{
     text-align: left;
+  }
+}
+@media only screen and (max-width: 450px){
+
+  .center .content h2, .center .content h3{
+    text-align: center;
   }
 }
 /* Filters Section */
